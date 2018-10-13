@@ -15,5 +15,7 @@ public class InitializePlayerSystem : IInitializeSystem
         var entity = _contexts.game.CreateEntity();
         entity.isPlayer = true;
         entity.AddResource(_contexts.game.gameSetup.value.Player);
+        entity.AddInitialPsition(Vector3.zero);
+        entity.AddAcceleration(Vector3.zero);
     }
 }

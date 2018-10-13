@@ -14,14 +14,14 @@ public partial class GameEntity {
     public void AddResource(UnityEngine.GameObject newPrefab) {
         var index = GameComponentsLookup.Resource;
         var component = CreateComponent<ResourceComponent>(index);
-        component.prefab = newPrefab;
+        component.Prefab = newPrefab;
         AddComponent(index, component);
     }
 
     public void ReplaceResource(UnityEngine.GameObject newPrefab) {
         var index = GameComponentsLookup.Resource;
         var component = CreateComponent<ResourceComponent>(index);
-        component.prefab = newPrefab;
+        component.Prefab = newPrefab;
         ReplaceComponent(index, component);
     }
 

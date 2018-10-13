@@ -4,5 +4,5 @@ using UnityEngine;
 [Game]
 public class ResourceComponent : IComponent
 {
-    public GameObject prefab;
+    public GameObject Prefab;
 }
